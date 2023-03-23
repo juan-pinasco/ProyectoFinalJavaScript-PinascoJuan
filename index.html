@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proyecto Final - Pinasco</title>
+  </head>
+  <body class="body">
+    <!------------------------------------------------NAVBAR------------------------------------------------------------ -->
+
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 class="navbar-logo">Marketplace "DE TODO UN POCO"</h1>
+        <h1 class="ver-carrito" id="verCarrito">
+          🛒<span id="cantidadCarrito" class="cantidad-carrito"></span>
+        </h1>
+      </nav>
+    </div>
+
+    <!------------------------------------------------contenido del sitio (todas las cards y sus productos)------------------------------------------------------------ -->
+    <div id="mainContenido" class="main-contenido"></div>
+
+    <!------------------------------------------------modal container------------------------------------------------------------ -->
+    <div
+      id="contenedorVentanaEmergente"
+      class="contenedor-ventana-emergente"
+    ></div>
+    <!------------------------------------------------modal container2------------------------------------------------------------ -->
+    <div
+      id="contenedorVentanaEmergente2"
+      class="contenedor-ventana-emergente"
+    ></div>
+    <!------------------------------------------------link de js------------------------------------------------------------ -->
+    <script src="./js/index.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"
+      integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

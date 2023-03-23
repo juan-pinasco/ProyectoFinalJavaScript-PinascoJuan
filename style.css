@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: bisque;
+}
+
+/* -------------------------------HEADER------------ */
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #8a8a8a;
+}
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  color: white;
+  margin-top: 4vh;
+  cursor: pointer;
+}
+.ver-carrito {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
+}
+
+/* -------------------------------CARDS------------ */
+.main-contenido {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.card > img {
+  width: 300px;
+  height: 250px;
+}
+
+.precio {
+  color: goldenrod;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00ccff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* -------------------------------modal content------------ */
+.contenedor-ventana-emergente {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: white;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 13vh;
+  scrollbar-color: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .contenedor-ventana-emergente::-webkit-scrollbar {
+  display: none;
+} */
+
+.header-ventana {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #8a8a8a;
+  color: white;
+  width: 100%;
+  align-items: center;
+}
+
+.header-ventana-titulo {
+  justify-self: start;
+  margin: 7px;
+}
+
+.boton-cerrar-ventana {
+  cursor: pointer;
+}
+
+/* .contenedor-ventana-emergente >  */
+.contenedor-carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+}
+
+.nombre-producto {
+  max-width: 60px;
+  padding-right: 10px;
+  color: white;
+}
+
+.contenedor-ventana-emergente > div > img {
+  height: 120px;
+  width: 120px;
+}
+
+.compra-total {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.finalizar-compra {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+  font-size: 18px;
+  border-radius: 10%;
+  margin-bottom: 5px;
+  margin-top: 7px;
+}
+.finalizar-compra:hover {
+  opacity: 0.7;
+}
+
+/* -------------------------------borrar producto de carrito------------ */
+.eleminar-producto-de-carrito {
+  cursor: pointer;
+}
+
+/* -------------------------------contador de carrito------------ */
+.cantidad-carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 4px;
+  top: 50px;
+  right: 15px;
+  position: absolute;
+  display: none;
+}
+/* --------------------------------- */
+.sumar-cantidad {
+  cursor: pointer;
+}
+.restar-cantidad {
+  cursor: pointer;
+}
+
+.total-compra-modal2 {
+  margin-top: 10px;
+  color: burlywood;
+}
+
+.numero-tarjeta-credito {
+  max-width: 150px;
+  height: 30px;
+}
+
+.vencimiento-tarjeta-credito {
+  max-width: 50px;
+  height: 30px;
+}
+.c-v-c {
+  max-width: 50px;
+  height: 30px;
+}
